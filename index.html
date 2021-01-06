@@ -15,10 +15,10 @@
 <!------------ HEADER----------->
 
 <div class="header">
-		<nav class="navbar navbar-expand-sm fixed-top ">
+		<nav class="navbar navbar-expand-lg">
   <a class="navbar-brand" href="#"><p>ACUPUNCTURE<span> .</span></p></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <span class=""><i class="fas fa-bars border-light fa-lg"></i></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -41,12 +41,9 @@
        <li class="nav-item">
         <a class="nav-link" href="#">Contact</a>
       </li>
-
   </div>
 </nav>
-
 </div>
-
 <!------------ENDS HEADER----------->
 
 
@@ -67,7 +64,7 @@
 	            </div>
 	            <div class="video"> 
 	            	<a href="#" class="button-more" id="videolink" onclick="toggle();">
-					<i class="far fa-play-circle"></i> Watch Intro Video  
+					<i class="far fa-play-circle"></i><p> Watch Intro Video  </p>
 				</a>
 				</div>
 
@@ -75,13 +72,55 @@
 </div>
 	 	</div>	
 		<div class="videoplay">
-	 		<video src="https://www.youtube.com/watch?v=1tyKbjwGrdU" controls="true"></video>	
+	 		<video src="intro.mp4" controls="true" id="vid"></video>	
 	 		<i class="fas fa-window-close" class="close-btn" onclick="toggle();" /></i>
 		</div>		
 		</div>		
  </div>
 </div>
 <!------------ ENDS BANNER----------->
+
+
+<!------------ SERVICES----------->
+<section class="service-page bg-dark">
+	<div class="service-wrap">
+		<ul class="sicon">
+			<li><a href=""><i class="fas fa-assistive-listening-systems"></i><h3>Healing</h3></a></li>
+			<li><a href=""><i class="fas fa-assistive-listening-systems"></i><h3>Healing</h3></a></li>
+			<li><a href=""><i class="fas fa-assistive-listening-systems"></i><h3>Healing</h3></a></li>
+		<li><a href=""><i class="fas fa-assistive-listening-systems"></i><h3>Healing</h3></a></li>
+			<li><a href=""><i class="fas fa-assistive-listening-systems"></i><h3>Healing</h3></a></li>
+
+
+
+		</ul> 
+
+		
+
+	</div>
+
+</section>
+
+
+
+
+
+<!------------ ENDS SERVICES----------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!------------ JS----------->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript">
@@ -96,7 +135,7 @@ function toggle(){
 	var videoplay= document.querySelector(".videoplay")
 	var video= document.querySelector(".video")
 	videoplay.classList.toggle("active");
-	video.pause();
+	$('#vid').get(0).pause();
 	video.currentTime= 0;
 }
 </script>

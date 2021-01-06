@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Lora:wght@500&family=Noto+Sans:ital@1&display=swap');
 
 :root{
@@ -53,8 +54,25 @@ body {
 .navbar-inner {
     background:transparent;
 }
+.header{
+	position: absolute;
 
+	width: 100%;
+	z-index: 1000;
 
+}
+@media (max-width: 990px) {
+ 		.navbar-collapse{
+ 			background-color: black;
+			opacity: 90%;
+ 		}
+ 		.navbar{
+ 			width: 100vw;
+ 		}
+ 		.navbar-nav li{
+ 			padding: 8px;
+ 		}
+ }
 
 /*******************************************
  			  BANNER CSS
@@ -83,7 +101,9 @@ body {
   	height: 100vh;
   	background-repeat: no-repeat;
  	background-size: cover;
- 	filter: brightness(80%)
+ 	filter: brightness(80%);
+ 	background-position: center;
+ 	position: relative;
 
  }
 
@@ -156,34 +176,47 @@ body {
 .videoplay i{
  	color: #fff;
  }
- @media (max-width: 780px) {
+ @media (max-width: 790px) {
  		.videoplay video{
  			max-width: 90%;
  		}
- }
- @media (max-width: 780px) {
- 		.navbar-collapse{
- 			background-color: black;
-			opacity: 90%;
- 		}
- 		.navbar{
- 			width: 100vw;
- 		}
- 		.navbar-nav li{
- 			padding: 8px;
- 		}
- }
- @media (max-width: 780px) {
- 	.inner-banner-wrap h1, p{
-		margin-top: 30px;
-		font-size: 10px;
- 	}
- 	.inner-banner-wrap h1, span{
- 		font-size: 16px;
 
- 	}
- 	.banner-text-wrap{
 
- 	}
 
+ .inner-banner-wrap .maintxt h1{
+		font-size: 16px;
  }
+ .inner-banner-wrap .maintxt span{
+ 	font-size: 22px;
+ }
+ .banner-para p{
+ 	font-size: 17px ;
+ }
+ .video p{
+ 	font-size: 18px;
+ }
+ }
+
+
+ /*******************************************
+ 			  BANNER CSS
+********************************************/
+
+ /*******************************************
+ 			  SERVICES CSS
+********************************************/
+.service-wrap {
+	display: flex;
+	justify-content: space-evenly;
+}
+.service-page ul{
+	margin: 0;
+	padding: 0;
+}
+.service-wrap ul li{
+	display: inline-block;
+	padding:90px 80px;
+}
+.service-wrap ul li:hover{
+	background-color: pink;
+}
