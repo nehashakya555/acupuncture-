@@ -245,8 +245,7 @@ body {
 }
 
 #ser-img img{
-	border-radius: 3%;
-	box-shadow: 20px 20px 25px 2px grey; 
+	box-shadow: 0px 2px 10px 1px grey; 
 }
 .service-card{
 	box-shadow: 5px 5px 25px 2px #aba3a2;
@@ -265,11 +264,38 @@ body {
 
 
 	}
+}
 @media (max-width: 416px){
 	.service-wrap ul li{
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}	
+}
+@media (max-width: 780px){
+		#ser-img img{
+		height: 30vh;
+		width: 80vw;
 	}
 }
+ /*******************************************
+ 			  TESTIMONIAL CSS
+********************************************/
+.testi-page{
+	background: #f8f9fb;
+}
 
+.tImg img{
+	border-radius: 50%;
+	width: 40%;
+	height: 80px;
+}
+.tcard{
+	box-shadow: 0px 12px 10px 2px #aba3a2;
+}
+.testi-page .tImg{
+	margin-right: -50px;
+}
+.testi-page .t-text{
+	color: var(--default-color);
+}
