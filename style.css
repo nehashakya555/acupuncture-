@@ -299,3 +299,48 @@ body {
 .testi-page .t-text{
 	color: var(--default-color);
 }
+
+
+
+ /*******************************************
+ 			  BLOG CSS
+********************************************/
+.blog  h3{
+	color: black;
+}
+.blog-text h5{
+	color: var(--default-color);
+}
+
+
+ /*******************************************
+ 			  FOOTER CSS
+********************************************/
+
+.footer{
+	background: #DBDBDB;
+	padding: 55px;
+}
+.foot-wrap{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.foot-wrap i{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+.foot-wrap p{
+	text-align: center;
+}
+
+@media (max-width: 804px){
+	.foot-wrap{
+		display: flex;
+		flex-direction: column;
+	}
+}
