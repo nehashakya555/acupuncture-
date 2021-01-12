@@ -344,3 +344,26 @@ body {
 		flex-direction: column;
 	}
 }
+ /*******************************************
+ 			  API CSS
+********************************************/
+
+
+.api-wrap{
+	background-color: grey;
+	padding: 60px;
+}
+.info-wrap{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	padding: 10px;
+}
+.vir{
+	float: right;
+}
+@media (max-width: 969px){
+	.info-wrap{
+		display: flex;
+		flex-direction: column;
+	}
+}

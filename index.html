@@ -308,14 +308,31 @@
 </div>
 </section>
 
-
-
-
-
-
-
-
 <!------------ ENDS BLOG----------->
+<!------------ API----------->
+
+
+<section class="api-wrap">
+	<div class="api">
+	<h3 class="text-center">Covid 19 <span>Be Safe</span></h3>
+	<div class="vir-img">
+	<img src="image/virus.png" alt="virus" width="200" height="200" class="vir">
+	</div>
+	<div id="api-date">Date Updated:</div>	
+</div>
+	<div class="info-wrap">
+	<div id="api-new-con">New Confirmed: </div>
+	<div id="api-new-death">NewDeaths: </div>
+	<div id="api-new-rec">NewRecovered: </div>
+	<div id="api-total-con">TotalConfirmed:</div> 
+	<div id="api-total-death">TotalDeaths: </div>
+	<div id="api-total-rec">TotalRecovered: </div>
+	</div>
+	</div>
+</section>
+
+<!------------ ENDS API----------->
+
 
 <!------------ FOOTER----------->
 <footer class="footer mt-3">
@@ -344,11 +361,6 @@
 
 
 
-
-
-
-
-
 <!------------ JS----------->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript">
@@ -369,7 +381,38 @@ function toggle(){
 
 </script>
 
+<script>
+	async function getCovidapi(){
+		const jsondata= await fetch('https://api.covid19api.com/summary');
 
+		const jsdata= await jsondata.json();
+				const globaldata = jsdata.Global;
+				//console.log(jsdata);
+
+				const date = jsdata.Date;
+
+				document.getElementById("api-date").innerHTML = "Date Updated: " + date;
+				//console.log(date);
+
+				document.getElementById("api-new-con").innerHTML = "New Confirmed: " + globaldata.NewConfirmed;
+				document.getElementById("api-new-death").innerHTML = "New Deaths: "+ globaldata.NewDeaths;
+				document.getElementById("api-new-rec").innerHTML = "New Recovered: "+ globaldata.NewRecovered;
+				document.getElementById("api-total-con").innerHTML = "Total Confirmed: "+ globaldata.TotalConfirmed;
+				document.getElementById("api-total-death").innerHTML = "Total Deaths: "+ globaldata.TotalDeaths;
+				document.getElementById("api-total-rec").innerHTML = "Total Recovered: " + globaldata.TotalRecovered;
+
+
+
+				 
+
+
+
+
+
+	}
+
+getCovidapi();
+</script>
 
 
 
