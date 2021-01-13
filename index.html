@@ -314,12 +314,13 @@
 
 <section class="api-wrap">
 	<div class="api">
-	<h3 class="text-center">Covid 19 <span>Be Safe</span></h3>
-	<div class="vir-img">
-	<img src="image/virus.png" alt="virus" width="200" height="200" class="vir">
+	<h3 class="text-center api-head">Covid 19 <span>  Be Safe</span></h3>
+		<div class="vir-img">
+			<img src="image/virus.png" alt="virus" width="200" height="200" class="vir">
+		</div>
+	<div class="apiwrap">
+	<div id="api-date">Updated Date:</div>	
 	</div>
-	<div id="api-date">Date Updated:</div>	
-</div>
 	<div class="info-wrap">
 	<div id="api-new-con">New Confirmed: </div>
 	<div id="api-new-death">NewDeaths: </div>
@@ -327,6 +328,7 @@
 	<div id="api-total-con">TotalConfirmed:</div> 
 	<div id="api-total-death">TotalDeaths: </div>
 	<div id="api-total-rec">TotalRecovered: </div>
+	</div>
 	</div>
 	</div>
 </section>
@@ -391,7 +393,7 @@ function toggle(){
 
 				const date = jsdata.Date;
 
-				document.getElementById("api-date").innerHTML = "Date Updated: " + date;
+				document.getElementById("api-date").innerHTML = "Updated Date: " + date;
 				//console.log(date);
 
 				document.getElementById("api-new-con").innerHTML = "New Confirmed: " + globaldata.NewConfirmed;
