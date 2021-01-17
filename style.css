@@ -1,10 +1,7 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Lora:wght@500&family=Noto+Sans:ital@1&display=swap');
-
 :root{
 	--default-color: #20B2AA	;
 }
-
 * {
   margin: 0;
   text-decoration: none;
@@ -18,20 +15,16 @@
 a:hover{
 	text-decoration: none!important;
 }
-
 body {
   font-weight: 300;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
   height: 100vh;
-  }
-
+ }
 /*******************************************
  			  HEADER CSS
 ********************************************/
-
-
 .header .navbar-brand span{
 	color: var(--default-color);
 } 
@@ -41,29 +34,23 @@ body {
 	margin-left: 10px;
 	font-weight: bold;
 }
-
 .navbar-nav li{
 	font-size: 20px;
 	text-transform: capitalize;	
-
 }
 .navbar-nav li a{
 	color: #fff;	
-
 }
 .navbar-nav > li.active > a{
     color: var(--default-color);
 }
-
 .navbar-inner {
     background:transparent;
 }
 .header{
 	position: absolute;
-
 	width: 100%;
 	z-index: 1000;
-
 }
 @media (max-width: 990px) {
  		.navbar-collapse{
@@ -77,19 +64,15 @@ body {
  			padding: 8px;
  		}
  }
-
 /*******************************************
  			  BANNER CSS
 ********************************************/
-
 .banner-text-wrap{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	top: 5%;
 }
-
-
 .banner-text-wrap h1{
 	color:#fff;
 	font-size: 60px;
@@ -98,8 +81,6 @@ body {
 	color:#fff;
 	font-size: 20px;
 }
-
-
 .banner img{
   	width:  100%;
   	height: 100vh;
@@ -108,9 +89,7 @@ body {
  	filter: brightness(80%);
  	background-position: center;
  	position: relative;
-
  }
-
  .inner-banner-wrap span{
  	color: var(--default-color);
  	font-size: 70px;
@@ -128,7 +107,6 @@ body {
  	display: flex;
  	justify-content: center;
  	text-align: center;
-
  }
 .button-more i{
  	 color: var(--default-color);
@@ -141,7 +119,6 @@ body {
   	color: #CCCCCC;
   	outline: none;
   }
-
 .videoplay{
 	position: fixed;
 	top: 50%;
@@ -156,20 +133,15 @@ body {
 	align-items: center;
 	visibility: hidden;
 	opacity: 0;
-
  }
  .videoplay video{
  	position: relative;
  	max-width: 900px;
  	outline: none;
-
  }
-
  .videoplay.active{
 	visibility: visible;
 	opacity: 1;
-
-
  }
  .fa-window-close{
  	position: absolute;
@@ -184,9 +156,6 @@ body {
  		.videoplay video{
  			max-width: 90%;
  		}
-
-
-
  .inner-banner-wrap .maintxt h1{
 		font-size: 16px;
  }
@@ -200,12 +169,9 @@ body {
  	font-size: 18px;
  }
  }
-
-
  /*******************************************
  			  BANNER CSS
 ********************************************/
-
  /*******************************************
  			  SERVICES CSS
 ********************************************/
@@ -225,7 +191,6 @@ body {
 	color: #fff;
 	text-decoration: none;
 	transition: all 0.5s ease-in-out;
-
 }
 .service-wrap ul li h3{
 	font-size: 24px;
@@ -241,13 +206,11 @@ body {
 	font-size: 40px;
 }
 .sicon a{
-	color: #fff;
-	
+	color: #fff;	
 }
 .sicon li:hover a{
 	color: var(--default-color);
 }
-
 #ser-img img{
 	box-shadow: 0px 2px 10px 1px grey; 
 }
@@ -261,12 +224,9 @@ body {
 .service-card a{
  	color: var(--default-color);
 }
-
 @media (max-width: 1122px) {
 	.service-wrap ul li{
 		padding: 20px;
-
-
 	}
 }
 @media (max-width: 416px){
@@ -288,7 +248,6 @@ body {
 .testi-page{
 	background: #f8f9fb;
 }
-
 .tImg img{
 	border-radius: 50%;
 	width: 40%;
@@ -303,9 +262,6 @@ body {
 .testi-page .t-text{
 	color: var(--default-color);
 }
-
-
-
  /*******************************************
  			  BLOG CSS
 ********************************************/
@@ -318,13 +274,9 @@ body {
 .img-blog-circle img{
 	border-radius: 50%;
 }
-
-
-
  /*******************************************
  			  FOOTER CSS
 ********************************************/
-
 .footer{
 	background: #DBDBDB;
 	padding: 55px;
@@ -355,8 +307,6 @@ body {
  /*******************************************
  			  API CSS
 ********************************************/
-
-
 .api-wrap{
 	background-color: #7D1010;
 	padding: 60px;
@@ -366,7 +316,6 @@ body {
 	display: grid;
 	grid-template-columns: auto auto auto;
 	padding: 10px;
-
 }
 .vir{
 	float: right;
@@ -374,11 +323,9 @@ body {
 .info-wrap{
 	color: white;
 }
-
 .api h3{
 	color: #fff;
 	animation: zoominoutsinglefeatured 5s infinite ; 
-	
 }
 @keyframes zoominoutsinglefeatured {
     0% {
@@ -391,26 +338,19 @@ body {
         transform: scale(1,1);
     }
 }
-
 .api h3 span{
 	color: #fff;
 	font-size: 40px;
-	
 }
-
-
 #api-date{
 	font-size: 25px;
 	color: #fff;
 	padding-bottom: 20px;
 }
 .vir-img img{
-
 	animation: spin 9s linear infinite;
     animation-direction: alternate; 
-
 }
- 
  @keyframes spin {
   from {
     transform: rotate(360deg); }
