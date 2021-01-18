@@ -1,6 +1,5 @@
 
 //-----API-----//
-
 	async function getCovidapi(){
 		const jsondata= await fetch('https://api.covid19api.com/summary');
 
@@ -23,7 +22,6 @@
 	}
 
 getCovidapi();
-
 //-----API ENDS-----//
 
 
@@ -32,7 +30,6 @@ getCovidapi();
 $(document).on('click', 'ul li', function() {
 	$(this).addClass('active').siblings().removeClass('active')
 })
-
 //----- ENDS NAVBAR-----//
 
 
@@ -56,6 +53,6 @@ $(document).on('click', 'video, #btnplay', function (e) {
         }
         return false;
     });
-
-
 //-----ENDS VIDEO-----//
+
+
